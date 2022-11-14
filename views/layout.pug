@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    script.
+      window.onload = () => {
+        document.body.removeAttribute('data-loading');
+      }
+  body(data-loading)
+    block content

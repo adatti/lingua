@@ -1,0 +1,21 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+@import url($ff-url);
+
+body {
+  font-family: $ff-sans;
+}
+
+@include set-util-classes($fs-vars, font-size);
+@include set-util-classes($fw-vars, font-weight);
+@include set-util-classes($lh-vars, line-height);
+@include set-util-classes($clr-vars, color, 'text');
+@include set-util-classes($clr-vars, background-color, 'bg');
+
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}

@@ -1,0 +1,11 @@
+@use '../utils/variables' as *;
+
+body {
+  &[data-loading] * {
+    transition: none !important;
+  }
+}
+
+*::selection {
+  background: rgba($clr-light, 0.5);
+}

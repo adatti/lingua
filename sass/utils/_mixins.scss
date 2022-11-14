@@ -1,0 +1,9 @@
+@mixin set-util-classes($var-map, $prop, $prefix: '') {
+  $prefix: if($prefix != '', '#{$prefix}-', '');
+
+  @each $key, $value in $var-map {
+    .#{$prefix + $key} {
+      #{$prop}: $value;
+    }
+  }
+}

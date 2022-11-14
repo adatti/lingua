@@ -1,0 +1,47 @@
+@use '../utils/variables' as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: color, border-bottom-color;
+
+  $form-clr-opaque: $clr-white;
+  $form-clr-blurred: rgba($clr-white, 0.5);
+  $form-clr-invalid: rgba($clr-accent, 0.5);
+
+  textarea {
+    resize: none;
+  }
+
+  input,
+  textarea {
+    color: $form-clr-opaque;
+    padding: $fs-300;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $form-clr-blurred;
+    font-size: $fs-300;
+
+    &::placeholder {
+      color: $form-clr-blurred;
+      font-size: $fs-300;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.active {
+      border-bottom-color: $clr-light;
+    }
+
+    &.invalid {
+      border-bottom-color: $form-clr-invalid;
+
+      &::placeholder {
+        color: $form-clr-invalid;
+      }
+    }
+  }
+}

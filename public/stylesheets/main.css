@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
+body[data-loading] * {
+  transition: none !important;
+}
+
+*::selection {
+  background: rgba(121, 200, 199, 0.5);
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  border: none;
+  text-align: center;
+  width: fit-content;
+}
+
+form > input,
+form > textarea {
+  background: inherit;
+  border: none;
+}
+
+body {
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.fs-300 {
+  font-size: 0.9375rem;
+}
+
+.fs-400 {
+  font-size: 1.125rem;
+}
+
+.fs-500 {
+  font-size: 3rem;
+}
+
+.fs-600 {
+  font-size: 4rem;
+}
+
+.fs-700 {
+  font-size: 5rem;
+}
+
+.fw-bold {
+  font-weight: 900;
+}
+
+.fw-regular {
+  font-weight: 500;
+}
+
+.lh-1 {
+  line-height: 1.5625rem;
+}
+
+.lh-2 {
+  line-height: 1.75rem;
+}
+
+.lh-3 {
+  line-height: 3rem;
+}
+
+.lh-4 {
+  line-height: 3.5rem;
+}
+
+.lh-5 {
+  line-height: 6.25rem;
+}
+
+.text-white {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.text-accent {
+  color: hsl(0deg, 87%, 73%);
+}
+
+.text-light {
+  color: hsl(179deg, 42%, 63%);
+}
+
+.text-dark-1 {
+  color: hsl(187deg, 41%, 29%);
+}
+
+.text-dark-2 {
+  color: hsl(186deg, 98%, 17%);
+}
+
+.text-dark-3 {
+  color: hsl(187deg, 100%, 14%);
+}
+
+.text-dark-4 {
+  color: hsl(187deg, 96%, 10%);
+}
+
+.text-dark-5 {
+  color: hsl(186deg, 100%, 8%);
+}
+
+.bg-white {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.bg-accent {
+  background-color: hsl(0deg, 87%, 73%);
+}
+
+.bg-light {
+  background-color: hsl(179deg, 42%, 63%);
+}
+
+.bg-dark-1 {
+  background-color: hsl(187deg, 41%, 29%);
+}
+
+.bg-dark-2 {
+  background-color: hsl(186deg, 98%, 17%);
+}
+
+.bg-dark-3 {
+  background-color: hsl(187deg, 100%, 14%);
+}
+
+.bg-dark-4 {
+  background-color: hsl(187deg, 96%, 10%);
+}
+
+.bg-dark-5 {
+  background-color: hsl(186deg, 100%, 8%);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.btn {
+  font-size: 0.9375rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  border-style: solid;
+  border-width: 2px;
+  transition-duration: 300ms;
+  transition-property: color, background-color, opacity;
+}
+.btn:enabled {
+  cursor: pointer;
+}
+.btn:disabled {
+  opacity: 0.25;
+}
+.btn--primary, .btn--primary-dark, .btn--primary-light {
+  background: transparent;
+}
+.btn--primary-light {
+  color: hsl(0deg, 0%, 100%);
+  border-color: hsl(0deg, 0%, 100%);
+}
+.btn--primary-light:enabled:hover {
+  color: hsl(186deg, 100%, 8%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+.btn--primary-dark {
+  color: hsl(186deg, 100%, 8%);
+  border-color: hsl(186deg, 100%, 8%);
+}
+.btn--primary-dark:enabled:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(186deg, 100%, 8%);
+}
+.btn--secondary {
+  border: none;
+  background: hsl(0deg, 0%, 100%);
+}
+.btn--secondary:enabled:hover {
+  background: hsl(179deg, 42%, 63%);
+}
+.btn--secondary:disabled {
+  color: inherit;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: color, border-bottom-color;
+}
+.form textarea {
+  resize: none;
+}
+.form input,
+.form textarea {
+  color: hsl(0deg, 0%, 100%);
+  padding: 0.9375rem;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9375rem;
+}
+.form input::placeholder,
+.form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9375rem;
+}
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+}
+.form input.active,
+.form textarea.active {
+  border-bottom-color: hsl(179deg, 42%, 63%);
+}
+.form input.invalid,
+.form textarea.invalid {
+  border-bottom-color: rgba(246, 126, 126, 0.5);
+}
+.form input.invalid::placeholder,
+.form textarea.invalid::placeholder {
+  color: rgba(246, 126, 126, 0.5);
+}
+
+/*# sourceMappingURL=main.css.map */

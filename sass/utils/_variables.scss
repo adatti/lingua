@@ -1,0 +1,57 @@
+// * FONTS
+$ff-url: 'https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap';
+
+$ff-sans: 'Balsamiq Sans', cursive;
+
+$fs-300: 0.9375rem;
+$fs-400: 1.125rem;
+$fs-500: 3rem;
+$fs-600: 4rem;
+$fs-700: 5rem;
+$fs-vars: (
+  fs-300: $fs-300,
+  fs-400: $fs-400,
+  fs-500: $fs-500,
+  fs-600: $fs-600,
+  fs-700: $fs-700,
+);
+
+$fw-bold: 900;
+$fw-regular: 500;
+$fw-vars: (
+  fw-bold: $fw-bold,
+  fw-regular: $fw-regular,
+);
+
+$lh-1: 1.5625rem;
+$lh-2: 1.75rem;
+$lh-3: 3rem;
+$lh-4: 3.5rem;
+$lh-5: 6.25rem;
+$lh-vars: (
+  lh-1: $lh-1,
+  lh-2: $lh-2,
+  lh-3: $lh-3,
+  lh-4: $lh-4,
+  lh-5: $lh-5,
+);
+
+// * COLORS
+$clr-white: hsl(0, 0%, 100%);
+$clr-accent: hsl(0, 87%, 73%);
+$clr-light: hsl(179, 42%, 63%);
+$clr-dark-1: hsl(187, 41%, 29%);
+$clr-dark-2: hsl(186, 98%, 17%);
+$clr-dark-3: hsl(187, 100%, 14%);
+$clr-dark-4: hsl(187, 96%, 10%);
+$clr-dark-5: hsl(186, 100%, 8%);
+$clr-vars: (
+  white: $clr-white,
+  accent: $clr-accent,
+  light: $clr-light,
+  dark-1: $clr-dark-1,
+  dark-2: $clr-dark-2,
+  dark-3: $clr-dark-3,
+  dark-4: $clr-dark-4,
+  dark-5: $clr-dark-5,
+);
